@@ -49,7 +49,11 @@ document.querySelector('#formButton').addEventListener('click', function (e) {
         totalPrice = totalPrice - totalPrice * 0.4;
     }
 
-    console.log(totalPrice.toFixed(2))
+    document.querySelector('.age-result').innerHTML = userAge;
+
+    document.querySelector('.price-result').innerHTML = totalPrice.toFixed(2);
+
+    document.querySelector('.km-result').innerHTML = userDistance;
 
 
 
